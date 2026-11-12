@@ -1,5 +1,5 @@
 const greet = (name) => {
-  return `Hello ${name}, welcome to javascript!`;
+  return 'Hello ' + name;
 };
- 
-console.log(greet("Mukta"));
+
+console.log(greet('Mukta'));
