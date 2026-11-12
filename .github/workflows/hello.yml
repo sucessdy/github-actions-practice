@@ -1,0 +1,17 @@
+
+# Workflow
+name: Hello
+
+# Trigger: manually run the workflow
+on:
+  workflow_dispatch:
+
+# Jobs define what the workflow should do
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+
+    # Individual tasks inside a job
+    steps:
+      - name: Say hello to everyone
+        run: echo "hello world"
