@@ -1,9 +1,12 @@
 {
   "name": "github-actions-practice",
   "version": "1.0.0",
+  "description": "Practicing GitHub Actions CI pipeline",
+  "main": "src/app.js",
   "scripts": {
-    "lint": "eslint .",
-    "format:check": "prettier --check ."
+    "start": "node src/app.js",
+    "lint": "eslint src/ --max-warnings 0",
+    "format:check": "prettier --check src/"
   },
   "devDependencies": {
     "eslint": "^9.0.0",
